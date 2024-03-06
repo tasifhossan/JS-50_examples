@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JS/JQ</title>
+  <!-- Font links -->
+
+  <!-- css links -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+  <div class="container">
+
+    
+
+
+
+
+
+
+    <hr>
+    <!-- lowest value in a list of arguments-->
+    <h2 class="text-danger">Click the button to show the lowest value in a list of arguments</h2>
+    <button class="btn btn-dark" onclick="m_lo()">Show</button>
+    <h3 id="lo_m">0, 150, 30, 20, -8, -200</h3>
+
+    <hr>
+    <!-- highest value in a list of arguments-->
+    <h2 class="text-danger">Click the button to show the highest value in a list of arguments</h2>
+    <button class="btn btn-dark" onclick="m_hi()">Show</button>
+    <h3 id="hi_m">0, 150, 30, 20, -8, -200</h3>
+
+    <hr>
+    <!-- absolute (positive) value of a integer-->
+    <h2 class="text-danger">Click the button to show the absolute (positive) value of a integer</h2>
+    <button class="btn btn-dark" onclick="m_ab()">Show</button>
+    <h3 id="ab_m">-4.6</h3>
+    
+    <hr>
+    <!-- floor-->
+    <h2 class="text-danger">Click the button to see rounded up (floor) to nearest integer</h2>
+    <button class="btn btn-dark" onclick="m_floor()">Show</button>
+    <h3 id="floor">Floor of 4.6</h3>
+
+    <hr>
+    <!-- ceil-->
+    <h2 class="text-danger">Click the button to see rounded down (ceil) to nearest integer</h2>
+    <button class="btn btn-dark" onclick="m_ceil()">Show</button>
+    <h3 id="ceil">Ceil of 4.6</h3>
+
+    <hr>
+    <!-- round-->
+    <h2 class="text-danger">Click the button to see rounded (ceil) to nearest integer</h2>
+    <button class="btn btn-dark" onclick="m_round()">Show</button>
+    <h3 id="round">Round of 4.6</h3>
+
+
+    <hr>
+    <!-- value of PI-->
+    <h2 class="text-danger">Click the button to see the value of PI</h2>
+    <button class="btn btn-dark" onclick="m_pi()">See</button>
+    <h3 id="pi">PI</h3>
+
+    <hr>
+    <!-- sorts an array in descending order -->
+    <h2 class="text-danger">Click the button to sorts the array in  descending order</h2>
+    <button class="btn btn-dark" onclick="reverseSortArray()">Sort</button>
+    <h3 id="reso_a">fruits = ["Banana", "Orange", "Apple", "Mango"]</h3>    
+
+    <hr>
+    <!-- sorts an array alphabetically -->
+    <h2 class="text-danger">Click the button to sorts the array alphabetically</h2>
+    <button class="btn btn-dark" onclick="sortArray()">Sort</button>
+    <h3 id="sort_a">fruits = ["Banana", "Orange", "Apple", "Mango"]</h3>
+
+    <hr>
+    <!-- reverses the elements in an array -->
+    <h2 class="text-danger">Click the button to reverse the array </h2>
+    <button class="btn btn-dark" onclick="reverseArray()">Reverse</button>
+    <h3 id="reverse_a">fruits = ["Banana", "Orange", "Apple", "Mango"]</h3>
+
+    <hr>
+    <!-- Merging Three Arrays -->
+    <h2 class="text-danger">Click the button to see merging of three arrays</h2>
+    <button class="btn btn-dark" onclick="con3Array()">Show</button>
+    <h3 id="c3_a">arr1 = ["Cecilie", "Lone"] <br>arr2 = ["Emil", "Tobias", "Linus"] <br>const arr3 = ["Robin", "Morgan"]</h3>
+
+    <hr>
+    <!-- length of the array -->
+    <h2 class="text-danger">Click the button to see the length of the array</h2>
+    <button class="btn btn-dark" onclick="lenArray()">See</button>
+    <h3 id="l_a">fruits = ["Banana", "Orange", "Apple", "Mango"]</h3>
+
+    <hr>
+    <!-- convert array to string -->
+    <h2 class="text-danger">Click the button to convert the array to string</h2>
+    <button class="btn btn-dark" onclick="arrToString()">Convert</button>
+    <h3 id="ar_s">fruits = ["Banana", "Orange", "Apple", "Mango"]</h3>
+
+
+    <hr>
+    <!-- is int-->
+    <h2 class="text-danger">Click the button to see the number is Int or not</h2>
+    <button class="btn btn-dark" onclick="is2_Int()">See</button>
+    <h3 id="i2_i">10.5</h3>
+
+    <hr>
+    <!-- is int-->
+    <h2 class="text-danger">Click the button to see the number is Int or not</h2>
+    <button class="btn btn-dark" onclick="is_Int()">See</button>
+    <h3 id="i1_i">10</h3>
+
+    <hr>
+    <!-- converts variables to numbers -->
+    <h2 class="text-danger">Click the button to convert variables to numbers</h2>
+    <button class="btn btn-dark" onclick="var6Convert()">Convert</button>
+    <h3 id="v6_c">john</h3>
+
+    <hr>
+    <!-- converts variables to numbers -->
+    <h2 class="text-danger">Click the button to convert variables to numbers</h2>
+    <button class="btn btn-dark" onclick="var5Convert()">Convert</button>
+    <h3 id="v5_c">10,20</h3>
+
+    <hr>
+    <!-- converts variables to numbers -->
+    <h2 class="text-danger">Click the button to convert variables to numbers</h2>
+    <button class="btn btn-dark" onclick="var4Convert()">Convert</button>
+    <h3 id="v4_c">10.33</h3>
+
+    <hr>
+    <!-- converts variables to numbers -->
+    <h2 class="text-danger">Click the button to convert variables to numbers</h2>
+    <button class="btn btn-dark" onclick="var3Convert()">Convert</button>
+    <h3 id="v3_c">10</h3>
+
+    <hr>
+    <!-- converts variables to numbers -->
+    <h2 class="text-danger">Click the button to convert variables to numbers</h2>
+    <button class="btn btn-dark" onclick="var1Convert()">Convert</button>
+    <h3 id="v1_c">Number(true)</h3>
+
+    <hr>
+    <!-- converts variables to numbers -->
+    <h2 class="text-danger">Click the button to convert variables to numbers</h2>
+    <button class="btn btn-dark" onclick="var2Convert()">Convert</button>
+    <h3 id="v2_c">Number(false)</h3>
+
+    <hr>
+    <!-- string divition -->
+    <h2 class="text-danger">Click the button to show the divition of two numeric string</h2>
+    <button class="btn btn-dark" onclick="divString()">Show</button>
+    <h3 id="dv_s">x = "100" <br> y = "10"</h3>
+
+    <hr>
+    <!-- string multiplication -->
+    <h2 class="text-danger">Click the button to show the multiplication of two numeric string</h2>
+    <button class="btn btn-dark" onclick="mulString()">Show</button>
+    <h3 id="ml_s">x = "100" <br> y = "10"</h3>
+
+    <hr>
+    <!-- string substraction -->
+    <h2 class="text-danger">Click the button to show the substraction of two numeric string</h2>
+    <button class="btn btn-dark" onclick="subString()">Show</button>
+    <h3 id="sb_s">x = "100" <br> y = "10"</h3>
+
+    <hr>
+    <!-- string addition -->
+    <h2 class="text-danger">Click the button to show the addition of two numeric string</h2>
+    <button class="btn btn-dark" onclick="addString()">Show</button>
+    <h3 id="ad_s">x = "100" <br> y = "10"</h3>
+
+    <hr>
+    <!-- string addition1 -->
+    <h2 class="text-danger">Click the button to show the addition of a number and string</h2>
+    <button class="btn btn-dark" onclick="add1String()">Show</button>
+    <h3 id="ad1_s">x = 100 <br> y = "10"</h3>
+
+    <hr>
+    <!-- position of the first occurrence of a string in a string -->
+    <h2 class="text-danger">Click the button to show the position of the first occurrence</h2>
+    <button class="btn btn-dark" onclick="showString()">Show</button>
+    <h3 id="sh_s">He is a bad boy.</h3>
+
+    <hr>
+    <!-- Replacing all matching String Content -->
+    <h2 class="text-danger">Click the button to replace all the matching String content</h2>
+    <button class="btn btn-dark" onclick="allreplaceString()">Replace</button>
+    <h3 id="a_re_s">He is a bad boy. Everybody calls him bad boy.</h3>
+
+    <hr>
+    <!-- Replacing String Content -->
+    <h2 class="text-danger">Click the button to replace the String content</h2>
+    <button class="btn btn-dark" onclick="replaceString()">Replace</button>
+    <h3 id="re_s">He is a bad boy.</h3>
+
+    <hr>
+    <!-- The trim() Method -->
+    <h2 class="text-danger">Click the button to remove thr whitespaces from both sides of the string</h2>
+    <button class="btn btn-dark" onclick="trimString()">Show</button>
+    <h3 id="tr_s">'          Hello World!          '</h3>
+
+    <hr>
+    <!-- Convert string to upper case -->
+    <h2 class="text-danger">Click the button to convert the string to uppercase</h2>
+    <button class="btn btn-dark" onclick="upcaseString()">Show</button>
+    <h3 id="u_s">Hello World!</h3>
+
+    <hr>
+    <!-- Convert string to lower case -->
+    <h2 class="text-danger">Click the button to convert the string to lowercase</h2>
+    <button class="btn btn-dark" onclick="lowcaseString()">Show</button>
+    <h3 id="lo_s">Hello World!</h3>
+
+    <hr>
+    <!-- specified position in a string -->
+    <h2 class="text-danger">Click the button to show the length of a string</h2>
+    <button class="btn btn-dark" onclick="lengthString()">Show</button>
+    <h3 id="l_s">ABCDEFGHIJKLMNOPQRSTUVWXYZ</h3>
+
+    <hr>
+    <!-- specified character's ascii value in a string -->
+    <h2 class="text-danger">Click the button to show the ASCII value of the character at index 6</h2>
+    <button class="btn btn-dark" onclick="asString()">Show</button>
+    <h3 id="a_s">Hello, World!</h3>
+
+    <hr>
+    <!-- specified position in a string -->
+    <h2 class="text-danger">Click the button to show the character at index 6</h2>
+    <button class="btn btn-dark" onclick="speinString()">Show</button>
+    <h3 id="s_s">Hello, World!</h3>
+
+    <hr>
+    <!-- addition of two number -->
+    <h2 class="text-danger">Click the button to show the addition of 2 number</h2>
+    <button class="btn btn-dark" onclick="add()">Show</button>
+    <h3 id="add_t"></h3>
+
+    <hr>
+    <!-- substraction of two number -->
+    <h2 class="text-danger">Click the button to show the substraction of 2 number</h2>
+    <button class="btn btn-dark" onclick="sub()">Show</button>
+    <h3 id="sub_t"></h3>
+
+    <hr>
+    <!-- multiplication of two number -->
+    <h2 class="text-danger">Click the button to show the multiplication of 2 number</h2>
+    <button class="btn btn-dark" onclick="mul()">Show</button>
+    <h3 id="mul_t"></h3>
+
+    <hr>
+    <!-- divition of two number -->
+    <h2 class="text-danger">Click the button to show the divition of 2 number</h2>
+    <button class="btn btn-dark" onclick="div()">Show</button>
+    <h3 id="div_t"></h3>
+
+    <hr>
+    <!-- alert -->
+    <h2 class="text-danger">Double click the button to get a alert</h2>
+    <button class="btn btn-dark" ondblclick="fAlert()">Double Click</button>
+    <h3 id=""></h3>
+
+    <hr>
+    <!-- my name -->
+    <h2 class="text-danger">Click the button to show my name</h2>
+    <button class="btn btn-dark" onclick="myName()">Show</button>
+    <h3 id="m_n">Name</h3>
+
+    <hr>
+    <!-- display/hide -->
+    <h2 class="text-danger">Click the button to diplay/hide the text</h2>
+    <button class="btn btn-dark" onclick="displayText()">Display</button>
+    <button class="btn btn-dark" onclick="hideText()">Hide</button>
+    <h3 id="text_h">Lorem ipsum dolor sit amet</h3>
+
+    <hr>
+    <!-- Color change -->
+    <h2 class="text-danger">Hover over the button to change the color</h2>
+    <button class="btn btn-dark" onmouseover="colorChange()">Change Color</button>
+    <h3 id="c_c">Lorem ipsum dolor sit amet</h3>
+
+    <hr>
+    <!-- show date -->
+    <h2 class="text-danger">Click the button to on/off the bulb</h2>
+    <button class="btn btn-dark" onclick="bulbOn()">Bulb On</button>
+    <button class="btn btn-dark" onclick="bulbOff()">Bulb Off</button>
+    <img id="bulb" src="images/off.gif" alt="">
+
+    <hr>
+    <!-- show date -->
+    <h2 class="text-danger">Click the button to show the date</h2>
+    <button class="btn btn-dark" onclick="showDate()">Show Date</button>
+    <h3 id="s_d">Date</h3>
+
+    <hr>
+    <!-- text change -->
+    <h2 class="text-danger">Click the button to change the text</h2>
+    <button class="btn btn-dark" onclick="textChange()">Text Change</button>
+    <h3 id="t_text">Lorem ipsum dolor sit amet</h3>
+  </div>
+
+
+
+  <!-- js links -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
